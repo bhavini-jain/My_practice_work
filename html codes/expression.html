@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script>
+            function validate()
+            {
+                var uname=document.getElementById("empname").value;
+                var regx=/qui\b/;
+                var res=uname.search(regx);
+                    document.getElementById("ulable").innerHTML=res;
+	        }
+</script>
+</head>
+<body>
+<table border="0" style="margin: 0 auto; width:500px">
+    <tr>
+        <td colspan="2"><h2>Regular expression</h2></td>
+    </tr>
+ 
+    <tr>
+        <td><input type="text" id="empname"/></p></td><td><label id="ulable" style="color:Red;visibility:hidden">Invalid Number</label></td>
+    </tr>
+	<tr>
+        <td colspan="2"><input type="button" onclick="validate()" value="Show"/></td>
+    </tr>
+    
+</table>
+</body>
+</html>

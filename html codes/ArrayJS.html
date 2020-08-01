@@ -1,0 +1,43 @@
+<!Doctype html>
+<html>
+<head>
+</head>
+<body>
+<script>
+        function check()
+        {
+            let numbers = [1,0,5,-1,90,-23,-76,-45,0,22,0,-48,0,0]
+         let result = true;
+         let count = 0;
+         for(let i =0; i < numbers.length; i++) 
+         {
+             //to count zeroes in array if(numbers[i]== 0){
+                // count+=1;
+
+                if(numbers[i]==0)
+                {
+                    numbers.splice(i,1);
+                }
+
+         }  
+   //document.getElementById("demo").innerHTML="Zero = " + count;
+  document.getElementById("demo").innerHTML=numbers;       
+}
+
+	
+</script>
+<table border="0" style="margin: 0 auto; width:500px">
+    <tr>
+        <td colspan="2"><h2>Array Operations</h2></td>
+    </tr>
+ 
+    <tr>
+        <td><p id="demo"></p></td><td></td>
+    </tr>
+	<tr>
+        <td><input type="button" onclick="check()" value="Check"/></td><td></td>
+    </tr>
+    
+</table>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Form in html</title>
+    </head>
+    <body>
+       <form method="post">
+           <input name="subject" type="hidden" value="class" />
+        <fieldset> <legend> Acadmeic Information</legend>
+            <table cellspacing="5">
+            <tr>
+                <td>
+                    <label for="degree">Degree</label>
+                    <select name ="degree" id="degree">
+                        <option value="degree">select degree</option>
+                        <option value="btech">btech</option>
+                        <option value="B.A">B.A</option>
+                        <option value="MBA">MBA</option>
+                        <option value="Bsc">BSc</option>
+                    </select>
+                </td>
+            </tr> 
+            <br/>
+             <tr>
+                <td>
+                    <label for="Studentid">Student Id</label>
+                    <input type="number" NAME="Studentid" />
+                 </td>      
+             </tr>    
+             <tr>
+                 <td>
+                    <label for="classes">Classes Attended</label>
+                    <select name ="classes" id="classes">
+                        <option value="class">select classes</option>
+                        <option value="geography">geography</option>
+                        <option value="maths">maths</option>
+                        <option value="english">english</option>
+                        <option value="science">science</option>
+                    </select>
+                 </td>
+             </tr>    
+             </table>    
+         </fieldset>
+    <fieldset>
+        <legend> Personal Details</legend>
+        <table></table>
+        <tr>
+            <td>
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname"/>
+                <br/>
+        
+                <label for="lname">Last  Name</label>
+                <input type="text" name="lname" id="lname"/>
+                    <br/>
+                    <label for="Gender">Gender</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                     <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+  <br/>
+                <label for="Email">Email Id</label>
+                <input type="text" name="Email" id="email"/>
+            </td>
+        </tr>
+        
+    </fieldset>
+<fieldset>
+    <p>
+        <textarea name="terms" cols="30" rows="4"
+          readonly="readonly">TERMS AND CONDITIONS...</textarea>
+      </p>
+      <p>
+        <input type="submit" name="submit" value="Send Form" />
+        <input type="reset" value="Clear Form" />
+      </p>
+    
+</fieldset>
+       </form>
+    </body>
+</html>    
